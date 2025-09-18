@@ -35,6 +35,12 @@ public class Main {
         employee4.logEmployeeTotal();
     }
 
+    /**
+     * *
+     * @param employee Çalışan Bilgilerinin bulunduğu obje
+     * @param workedDays Çalıştığı gün sayısı (0 ile 31 arasında olmalıdır.)
+     * @return Maaş, Mesai Ücreti ve Prim hesaplaması yapılıp çalışan objesine kaydedilir.
+     */
     public static Employee calculateTotalSalary(Employee employee, int workedDays) {
         if (workedDays < 0 || workedDays > 31) {
             System.out.println("Çalıştığı gün sayısı 0 ile 31 arasında olmalıdır. Geçersiz.");
